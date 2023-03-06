@@ -1,11 +1,10 @@
 [package]
 name = "smallest"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["pedia <ken.shao@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-# libc = { version = "0.2", default-features = false }
 libc = { default-features = false }
 
 
@@ -14,3 +13,4 @@ opt-level = 'z'     # Optimize for size.
 lto = true          # Enable Link Time Optimization
 codegen-units = 1   # Reduce number of codegen units to increase optimizations.
 panic = 'abort'     # Abort on panic
+strip = true
